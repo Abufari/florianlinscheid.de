@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Florian Linscheid</title>
+    <link>192.186.0.214/</link>
+    <description>Recent content on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Floppotron 3.0</title>
+      <link>192.186.0.214/projects/floppotron/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/projects/floppotron/</guid>
+      <description>After a long time, here it is! The biggest and best update yet.</description>
+    </item>
+    
+    <item>
+      <title>Xmas Tree Lights</title>
+      <link>192.186.0.214/projects/christmastree/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/projects/christmastree/</guid>
+      <description>Matt Parker vom Youtube-Channel standupmaths hatte vor einiger Zeit gezeigt, wie er seinen Weihnachtsbaum mit einzeln addressierbaren LEDs bestückt hatte, um diese dann als „3D Monitor“ benutzen zu können.</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>192.186.0.214/impressum/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/impressum/</guid>
+      <description>Impressum # blaba</description>
+    </item>
+    
+    <item>
+      <title>Über mich</title>
+      <link>192.186.0.214/about/</link>
+      <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/about/</guid>
+      <description>Ich bin wissenschaftlicher Mitarbeiter am Institut für Materials Resource Management an der Universität Augsburg.</description>
+    </item>
+    
+    <item>
+      <title>Über mich</title>
+      <link>192.186.0.214/florian/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/florian/</guid>
+      <description>Wir machen die Welt besser!</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from Congo 1.x</title>
+      <link>192.186.0.214/docs/version-2/upgrade/</link>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/version-2/upgrade/</guid>
+      <description>Although Congo 2.</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>192.186.0.214/docs/installation/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/installation/</guid>
+      <description>Simply follow the standard Hugo Quick Start procedure to get up and running quickly.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>192.186.0.214/docs/getting-started/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/getting-started/</guid>
+      <description>This section assumes you have already installed the Congo theme.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>192.186.0.214/docs/configuration/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/configuration/</guid>
+      <description>Congo is a highly customisable theme and uses some of the latest Hugo features to simplify how it is configured.</description>
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>192.186.0.214/samples/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/icons/</guid>
+      <description>Congo has built-in support for a number of FontAwesome 6 icons.</description>
+    </item>
+    
+    <item>
+      <title>Users</title>
+      <link>192.186.0.214/users/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/users/</guid>
+      <description>Real websites that are built with Congo.</description>
+    </item>
+    
+    <item>
+      <title>Homepage Layout</title>
+      <link>192.186.0.214/docs/homepage-layout/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/homepage-layout/</guid>
+      <description>Congo provides a fully flexible homepage layout.</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>192.186.0.214/docs/front-matter/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/front-matter/</guid>
+      <description>In addition to the default Hugo front matter parameters, Congo adds a number of additional options to customise the presentation of individual articles.</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>192.186.0.214/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/shortcodes/</guid>
+      <description>In addition to all the default Hugo shortcodes, Congo adds a few extras for additional functionality.</description>
+    </item>
+    
+    <item>
+      <title>Partials</title>
+      <link>192.186.0.214/docs/partials/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/partials/</guid>
+      <description>Analytics # Congo provides built-in support for Fathom Analytics and Google Analytics.</description>
+    </item>
+    
+    <item>
+      <title>Content Examples</title>
+      <link>192.186.0.214/docs/content-examples/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/content-examples/</guid>
+      <description>If you&amp;rsquo;ve been reading the documentation in order, you should now know about all the features and configurations available in Congo.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Customisation</title>
+      <link>192.186.0.214/docs/advanced-customisation/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/advanced-customisation/</guid>
+      <description>There are many ways you can make advanced changes to Congo.</description>
+    </item>
+    
+    <item>
+      <title>Hosting &amp; Deployment</title>
+      <link>192.186.0.214/docs/hosting-deployment/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/hosting-deployment/</guid>
+      <description>There are many ways to deploy your Hugo website built with Congo.</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>192.186.0.214/samples/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>192.186.0.214/samples/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/rich-content/</guid>
+      <description>This is an &lt;em&gt;example&lt;/em&gt; of a &lt;strong&gt;rich&lt;/strong&gt; content summary.</description>
+    </item>
+    
+    <item>
+      <title>Mathematical notation</title>
+      <link>192.186.0.214/samples/mathematical-notation/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/mathematical-notation/</guid>
+      <description>&lt;p&gt;KaTeX can be used to render mathematical notation within articles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Charts</title>
+      <link>192.186.0.214/samples/charts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/charts/</guid>
+      <description>Congo includes Chart.js for powerful charts and data visualisations.</description>
+    </item>
+    
+    <item>
+      <title>Diagrams and Flowcharts</title>
+      <link>192.186.0.214/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/diagrams-flowcharts/</guid>
+      <description>It&amp;rsquo;s easy to add diagrams and flowcharts to articles using Mermaid.</description>
+    </item>
+    
+    <item>
+      <title>Emoji :parachute:</title>
+      <link>192.186.0.214/samples/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/emoji/</guid>
+      <description>📖🏞️🧗🏽🐉🧙🏽‍♂️🧚🏽👸</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LED on Florian Linscheid</title>
+    <link>192.186.0.214/tags/led/</link>
+    <description>Recent content in LED on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/tags/led/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xmas Tree Lights</title>
+      <link>192.186.0.214/projects/christmastree/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/projects/christmastree/</guid>
+      <description>Matt Parker vom Youtube-Channel standupmaths hatte vor einiger Zeit gezeigt, wie er seinen Weihnachtsbaum mit einzeln addressierbaren LEDs bestückt hatte, um diese dann als „3D Monitor“ benutzen zu können.</description>
+    </item>
+    
+  </channel>
+</rss>

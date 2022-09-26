@@ -1,0 +1,25 @@
+languageCode = "de"
+languageName = "Deutsch"
+displayName = ":de:"
+isoCode = "de"
+weight = 1
+rtl = false
+
+title = "Florian Linscheid"
+# logo = "img/favicons/mstile-150x150.jpg"
+description = "Personal Website by Florian Linscheid"
+copyright = "&copy; 2022 Florian Linscheid"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Florian Linscheid"
+  image = "img/IMG_0827.jpeg"
+  headline = "Doktorand, Programmierer, Kaffeeliebhaber!"
+  bio = "Wissenschaftlicher Mitarbeiter am Institut für Materials Resource Management der Universtität Augsburg"
+  links = [
+    { twitter = "https://twitter.com/linschfl" },
+    { linkedin = "https://www.linkedin.com/in/linscheid-florian/" },
+    { youtube = "https://youtube.com/" },
+    { xing = "https://www.xing.com/profile/FlorianFelix_Linscheid/cv" },
+  ]

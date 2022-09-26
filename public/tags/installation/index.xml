@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>installation on Florian Linscheid</title>
+    <link>192.186.0.214/tags/installation/</link>
+    <description>Recent content in installation on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation</title>
+      <link>192.186.0.214/docs/installation/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/installation/</guid>
+      <description>Simply follow the standard Hugo Quick Start procedure to get up and running quickly.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>192.186.0.214/docs/getting-started/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/getting-started/</guid>
+      <description>This section assumes you have already installed the Congo theme.</description>
+    </item>
+    
+  </channel>
+</rss>

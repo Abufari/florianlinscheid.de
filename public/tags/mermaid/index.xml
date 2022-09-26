@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mermaid on Florian Linscheid</title>
+    <link>192.186.0.214/tags/mermaid/</link>
+    <description>Recent content in mermaid on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcodes</title>
+      <link>192.186.0.214/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/shortcodes/</guid>
+      <description>In addition to all the default Hugo shortcodes, Congo adds a few extras for additional functionality.</description>
+    </item>
+    
+    <item>
+      <title>Diagrams and Flowcharts</title>
+      <link>192.186.0.214/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/samples/diagrams-flowcharts/</guid>
+      <description>It&amp;rsquo;s easy to add diagrams and flowcharts to articles using Mermaid.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on Florian Linscheid</title>
+    <link>192.186.0.214/tags/config/</link>
+    <description>Recent content in config on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuration</title>
+      <link>192.186.0.214/docs/configuration/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/configuration/</guid>
+      <description>Congo is a highly customisable theme and uses some of the latest Hugo features to simplify how it is configured.</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>192.186.0.214/docs/front-matter/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/front-matter/</guid>
+      <description>In addition to the default Hugo front matter parameters, Congo adds a number of additional options to customise the presentation of individual articles.</description>
+    </item>
+    
+  </channel>
+</rss>

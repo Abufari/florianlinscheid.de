@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics on Florian Linscheid</title>
+    <link>192.186.0.214/tags/analytics/</link>
+    <description>Recent content in analytics on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Partials</title>
+      <link>192.186.0.214/docs/partials/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/docs/partials/</guid>
+      <description>Analytics # Congo provides built-in support for Fathom Analytics and Google Analytics.</description>
+    </item>
+    
+  </channel>
+</rss>

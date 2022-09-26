@@ -1,0 +1,21 @@
+{{ if .IsNamedParams -}}
+ <div class="container-fluid p-{{ with .Get "padding" }}{{ . }}{{ else }}0{{ end }}{{ with .Get "class" }} {{ . }}{{ end }} overflow-hidden">
+ <div class="row row-cols-1 row-cols-sm-{{ with .Get "cols" }}{{ . }}{{ else }}2{{ end }} {{ with .Get "gx" }}gx-{{ . }}{{ end }}">
+ {{- range split .Inner "<--->" -}}
+     <div class="col">
+     {{ . | markdownify }}
+     </div>
+ {{- end -}}
+ </div>
+ </div>
+ {{- else -}}
+ <div class="flex justify-between">
+ <div class="row row-cols-1 row-cols-sm-2">
+ {{- range split .Inner "<--->" -}}
+     <div class="col">
+     {{ . | markdownify }}
+     </div>
+ {{- end -}}
+ </div>
+ </div>
+ {{- end }}

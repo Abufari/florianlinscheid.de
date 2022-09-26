@@ -1,0 +1,15 @@
+<div class="py-2 px-2 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600">
+	<div class="flex">
+		<div class="grow">{{ .Get 0 }}</div>
+		<div class="flex-none w-32">
+			{{ $index := .Get 1 }}
+			{{ $leftover := (sub 5 $index) }}
+			{{ range seq $index }}
+			{{ partial "icon.html" "star.fill" . }}
+			{{ end }}
+			{{ range seq $leftover }}
+			{{ partial "icon.html" "star.fill.gray" . }}
+			{{ end }}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html
+  lang="de"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="de" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Xmas Tree Lights &middot; Florian Linscheid</title>
+    <meta name="title" content="Xmas Tree Lights &middot; Florian Linscheid" />
+  
+  <meta name="description" content="Personal Website by Florian Linscheid" />
+  
+  
+  
+  <link rel="canonical" href="192.186.0.214/projects/christmastree/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/192.186.0.214/css/main.bundle.min.2578655a4efd524fd851637ac5f9c7efe570a9a287fca5ef29fd1f6048006a1f9bfc59025ca0c38348f69c1287c94e5d3b0831c35c6bc200168c7ed11280f447.css"
+    integrity="sha512-JXhlWk79Uk/YUWN6xfnH7&#43;VwqaKH/KXvKf0fYEgAah&#43;b/FkCXKDDg0j2nBKHyU5dOwgxw1xrwgAWjH7REoD0Rw=="
+  />
+  
+  
+  <script type="text/javascript" src="/192.186.0.214/js/appearance.min.12e98742cd283574d030a7fe55f29597df4ee214f7ff7075b4d19a64d046a602753c715295550be7899b661619cec89c679049d36c624681671a8013c1249896.js" integrity="sha512-EumHQs0oNXTQMKf&#43;VfKVl99O4hT3/3B1tNGaZNBGpgJ1PHFSlVUL54mbZhYZzsicZ5BJ02xiRoFnGoATwSSYlg=="></script>
+  
+    
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script defer type="text/javascript" id="script-bundle" src="/192.186.0.214/js/main.bundle.min.9d0d5b008527e0f2fa1600ae6c524aa347c4fbedf352dce49867c9d75b2abb3f374316f4711baedb0d0814a22fb8e27c8d273ac64f92db28fabe96454e64edf4.js" integrity="sha512-nQ1bAIUn4PL6FgCubFJKo0fE&#43;&#43;3zUtzkmGfJ11squz83Qxb0cRuu2w0IFKIvuOJ8jSc6xk&#43;S2yj6vpZFTmTt9A==" data-copy="Kopieren" data-copied="Kopiert"></script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/192.186.0.214/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/192.186.0.214/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/192.186.0.214/favicon-16x16.png" />
+    <link rel="manifest" href="/192.186.0.214/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Xmas Tree Lights" />
+<meta property="og:description" content="Arduino-gesteuerte LEDs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="192.186.0.214/projects/christmastree/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2022-06-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-06-07T00:00:00+00:00" /><meta property="og:site_name" content="Florian Linscheid" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Xmas Tree Lights"/>
+<meta name="twitter:description" content="Arduino-gesteuerte LEDs"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Projekte",
+    "name": "Xmas Tree Lights",
+    "headline": "Xmas Tree Lights",
+    "description": "Arduino-gesteuerte LEDs",
+    "abstract": "Matt Parker vom Youtube-Channel standupmaths hatte vor einiger Zeit gezeigt, wie er seinen Weihnachtsbaum mit einzeln addressierbaren LEDs bestückt hatte, um diese dann als „3D Monitor“ benutzen zu können.",
+    "inLanguage": "de",
+    "url" : "192.186.0.214\/projects\/christmastree\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Florian Linscheid"
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-06-07T00:00:00\u002b00:00",
+    "datePublished": "2022-06-07T00:00:00\u002b00:00",
+    
+    "dateModified": "2022-06-07T00:00:00\u002b00:00",
+    
+    "keywords": ["Arduino","LED","Programmieren"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "989"
+  }]
+  </script>
+
+
+  
+  <meta name="author" content="Florian Linscheid" />
+  
+    
+      <link href="https://twitter.com/linschfl" rel="me" />
+    
+      <link href="https://www.linkedin.com/in/linscheid-florian/" rel="me" />
+    
+      <link href="https://youtube.com/" rel="me" />
+    
+      <link href="https://www.xing.com/profile/FlorianFelix_Linscheid/cv" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+  
+  
+  <link
+    type="text/css" rel="stylesheet"
+    href="/192.186.0.214/lib/katex/katex.min.d3b6210b73f8fef4b91dd806b8d000788c5be5e7bffde7e044da3900674cb6a14150f60e7501bfb032b4365e6a36af7891d124fcfbeef2998de066147ae71493.css"
+    integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw=="
+  />
+  
+  
+  <script defer src="/192.186.0.214/lib/katex/katex.min.68c0e216cac45772b3027f441f0c81452ef2d403e3656b7f67fef7ba42cdd826b629c186ce53901504a77ce76711c7a1a7031a43c79d94307fd1c317d86b076e.js" integrity="sha512-aMDiFsrEV3KzAn9EHwyBRS7y1APjZWt/Z/73ukLN2Ca2KcGGzlOQFQSnfOdnEcehpwMaQ8edlDB/0cMX2GsHbg=="></script>
+  
+  
+  <script defer src="/192.186.0.214/lib/katex/auto-render.min.640fd13eb028f3c0e5c119e7a0d56a28836740d716111cd12b4dcf0da038188262559bc61485906dd582b1479b3197e45a88677e782c0e35f353a3e890ee231b.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" onload="renderMathInElement(document.body);"></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Zum Hauptinhalt springen</a
+      >
+    </div><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral print:hidden"
+>
+  
+  <div>
+    
+      <a
+        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+        rel="me"
+        href="/192.186.0.214/"
+        >Florian Linscheid</a
+      >
+    
+
+  </div>
+  
+  
+    <nav>
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href="192.186.0.214/about/"
+              title="Über mich"
+              >Über</a
+            >
+          </li>
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href="192.186.0.214/projects/"
+              title="Projekte"
+              >Projekte</a
+            >
+          </li>
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href=""
+              title=""
+              >Research</a
+            >
+          </li>
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href="192.186.0.214/blog/"
+              title="Blog"
+              >Blog</a
+            >
+          </li>
+        
+        
+          <li
+            class="ltr:text-right rtl:text-left ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <button
+              id="search-button"
+              class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+              title="Suche (/)"
+            >
+              
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+          </li>
+        
+      </ul>
+    </nav>
+  
+</header>
+<div class="relative">
+      <main id="main-content" class="grow">
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="192.186.0.214/"
+      >Florian Linscheid</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="192.186.0.214/projects/"
+      >Projekte</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="192.186.0.214/projects/christmastree/"
+      >Xmas Tree Lights</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Xmas Tree Lights
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2022-06-07 00:00:00 &#43;0000 UTC">7 Juni 2022</time><span class="px-2 text-primary-500">&middot;</span><span title="Lesezeit">5 min</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+      </div>
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+      
+        <div class="order-first px-0 lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:order-last">
+          <div class="ltr:pl-5 rtl:pr-5 toc lg:sticky lg:top-10 print:hidden">
+            <details open class="mt-0 overflow-hidden rounded-lg rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 lg:mt-3">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 text-neutral-800 dark:text-neutral-100 lg:hidden bg-neutral-100 dark:bg-neutral-700"
+  >
+    Inhaltsverzeichnis
+  </summary>
+  <div
+    class="py-2 border-dotted ltr:border-l rtl:border-r rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 border-neutral-300 dark:border-neutral-600"
+  >
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#endergebnis">Endergebnis</a></li>
+    <li><a href="#bestimmung-der-3d-koordinaten-der-leds">Bestimmung der 3D Koordinaten der LEDs</a>
+      <ul>
+        <li><a href="#aufnahme-der-fotos">Aufnahme der Fotos</a></li>
+        <li><a href="#bestimmung-der-led-position-in-den-bildern">Bestimmung der LED Position in den Bildern</a></li>
+        <li><a href="#berechnung-der-koordinaten">Berechnung der Koordinaten</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        <p>Matt Parker vom Youtube-Channel <strong>standupmaths</strong> hatte vor einiger Zeit gezeigt, wie er seinen Weihnachtsbaum mit einzeln addressierbaren LEDs bestückt hatte, um diese dann als „3D Monitor“ benutzen zu können.
+Hier das Video für den Kontext:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/TvlpIojusBE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Das musste ich auch haben.
+Daher hatte ich mir zum nächsten Weihnachten 400 einzeln adressierbare LEDs vom Typ WS2812B bestellt und damit den Weihnachtsbaum geschmückt.
+Für die Ansteuerung der LEDs habe ich dabei einen Arduino Nano 33 BLE verwendet, der über WLAN verfügt und angesteuert werden kann.</p>
+<h2 id="endergebnis" class="relative group">Endergebnis <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#endergebnis" aria-label="Anker">#</a></span></h2>
+<p>Das fertige Ergebnis sah dann so aus:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I took last year’s inspiration from <a href="https://twitter.com/standupmaths?ref_src=twsrc%5Etfw">@standupmaths</a> and built my own 3D Christmas tree this year using individually controllable LEDs, an <a href="https://twitter.com/hashtag/Arduino?src=hash&amp;ref_src=twsrc%5Etfw">#Arduino</a> with Wi-Fi and the fastLED library. I’m quite proud and very happy with it 😃🎄 <a href="https://t.co/oNMyorvduk">pic.twitter.com/oNMyorvduk</a></p>&mdash; Florian Linscheid (@linschfl) <a href="https://twitter.com/linschfl/status/1474744723692793858?ref_src=twsrc%5Etfw">December 25, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="bestimmung-der-3d-koordinaten-der-leds" class="relative group">Bestimmung der 3D Koordinaten der LEDs <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#bestimmung-der-3d-koordinaten-der-leds" aria-label="Anker">#</a></span></h2>
+<h3 id="aufnahme-der-fotos" class="relative group">Aufnahme der Fotos <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aufnahme-der-fotos" aria-label="Anker">#</a></span></h3>
+<p>Um im 3D Raum ein stimmiges Bild erzeugen zu können, muss man die Koordinaten jeder einzelnen LED kennen.
+Das ist dabei auch die größte Schwierigkeit an diesem Projekt.</p>
+<p>Matt Parker hatte dabei die Idee, jeweils immer nur eine LED nach der anderen anzumachen und davon ein Foto zu machen, sodass man eine 2D Projektion der LEDs aus einer Richtung bekommt und die Zuordnung zu jeder LED kennt.
+Wenn man das für mindestens zwei, besser vier Seiten macht, kann man daraus die 3D Koordinaten der LEDs zurückrechnen.
+Er hatte dafür die Webcam des Laptops genommen und mit einem Pythonskript seinen Raspberry Pi angesteuert.</p>
+<p>
+
+Ich wollte mir etwas mehr Auflösung gönnen und die Fotos mit dem Handy machen.
+Das Problem dabei ist die Synchronisation zwischen Handy und Arduino, wenn ich nicht gerade jedes Mal manuell den Auslöser drücken möchte (es sind insgesamt immerhin \(400 \cdot 4 = 1600 \) Fotos).</p>
+<p>Dafür habe ich einen kleinen Server auf dem Arduino aufgesetzt, der über eine kleine API zur nächsten LED schaltet.
+Somit schalten die LEDs nicht mit einer fixen Zeitspanne weiter sondern nur per HTTP Request.
+Auf dem Handy habe ich dann einen kleinen
+<a href="https://www.icloud.com/shortcuts/ad814d56b8564ad2b0cfd200306038c6" target=_blank >iOS Kurzbefehl</a>
+erstellt, der den HTTP Request ausführt und den Kameraauslöser betätigt.
+Ich hatte dafür die Kamera-App „Halide“ benutzt, weil ich dachte, dass die Auswertung mit RAW-Bildern einfacher wird, rückblickend hätte die normale Kamera-App aber problemlos ausgereicht.
+Der Kurzbefehl besteht aus dieser Abfolge:
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /192.186.0.214/projects/christmastree/ChristmasTree_Kurzbefehl_hudeaaf5860c9d46b4d5b2a7790f1b5eec_211699_330x0_resize_box_3.png 330w,
+          /192.186.0.214/projects/christmastree/ChristmasTree_Kurzbefehl_hudeaaf5860c9d46b4d5b2a7790f1b5eec_211699_660x0_resize_box_3.png 660w,
+          /192.186.0.214/projects/christmastree/ChristmasTree_Kurzbefehl_hudeaaf5860c9d46b4d5b2a7790f1b5eec_211699_1024x0_resize_box_3.png 1024w,
+          /192.186.0.214/projects/christmastree/ChristmasTree_Kurzbefehl_hudeaaf5860c9d46b4d5b2a7790f1b5eec_211699_1320x0_resize_box_3.png 2x"
+        src="/192.186.0.214/projects/christmastree/ChristmasTree_Kurzbefehl_hudeaaf5860c9d46b4d5b2a7790f1b5eec_211699_660x0_resize_box_3.png"
+        alt="iOS Kurzbefehl"
+      />
+      <figcaption>Kurzbefehl</figcaption>
+    </figure>
+  
+
+</p>
+<p>Für jede Seite des Baums müssen alle LEDs durchgeschalten werden, also insgesamt 400 mal.
+Im Loop wird der GET Request mit dem Endpunkt [<strong>N</strong>]ext des Arduinos aufgerufen, der auf die nächste LED schaltet.
+Das Foto wird aufgenommen und ein eine kleine Pause von 4 Sekunden eingelegt, um der Kamera-App genug Zeit zum schießen und abspeichern des Fotos zu geben.
+Nachdem alle 400 Fotos aufgezeichnet wurden, wurde der Baum um 90° gedreht das Ganze dreimal wiederholt.</p>
+<p>Zuerst wollte ich die Position der LEDs in den Bildern automatisiert über die Suche nach dem hellsten Punkt im Bild machen, in der Hälfte der Fälle werden die LEDs aber von Teilen des Baums überdeckt und man bekommt falsche Ergebnisse.
+Weniger zeitaufwendig war dann letztendlich, die Position der LED im Bild manuell zu bestimmen.</p>
+<h3 id="bestimmung-der-led-position-in-den-bildern" class="relative group">Bestimmung der LED Position in den Bildern <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#bestimmung-der-led-position-in-den-bildern" aria-label="Anker">#</a></span></h3>
+<p>Hier hilft ein kleines Skript mit der OpenCV Library.
+Dieses geht jedes Bild durch und man klickt einfach auf die Position, an der sich die LED befindet.
+Da sich die LEDs ja entlang der Lichterkette bewegen, kann man die Position auch sehr gut abschätzen, selbst wenn man sie nicht direkt sehen kann.
+Und da die Position am Ende aus den vier Richtungen gemittelt wird, sind kleine Abweichungen auch nicht so dramatisch.</p>
+<p>Das Skript sieht dabei im Wesentlichen so aus:</p>
+<script type="application/javascript" src="https://gist.github.com/Abufari/886e530e07fa724207d836394684feaa.js"></script>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">axes3d</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">im_height</span> <span class="o">=</span> <span class="mi">4032</span>
+</span></span><span class="line"><span class="cl"><span class="n">im_width</span> <span class="o">=</span> <span class="mi">3024</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;locations_1_manual.csv&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df1</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">im_height</span> <span class="o">-</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df1</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;locations_3_manual.csv&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df3</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">im_width</span> <span class="o">-</span> <span class="n">df3</span><span class="o">.</span><span class="n">x</span>
+</span></span><span class="line"><span class="cl"><span class="n">df3</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">df3</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">im_height</span> <span class="o">-</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df3</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">df3</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df3</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;locations_2_manual.csv&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">df2</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">im_height</span> <span class="o">-</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">df2</span><span class="o">.</span><span class="n">z</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;locations_4_manual.csv&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df4</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">im_width</span> <span class="o">-</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df4</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">df4</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">df4</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df4</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">im_height</span> <span class="o">-</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">df4</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">df4</span><span class="o">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">df4</span><span class="o">.</span><span class="n">z</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mean_z</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">df1</span><span class="o">.</span><span class="n">z</span><span class="p">,</span> <span class="n">df2</span><span class="o">.</span><span class="n">z</span><span class="p">,</span> <span class="n">df3</span><span class="o">.</span><span class="n">z</span><span class="p">,</span> <span class="n">df4</span><span class="o">.</span><span class="n">z</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_z</span> <span class="o">=</span> <span class="n">mean_z</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_z</span> <span class="o">=</span> <span class="n">mean_z</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">df1</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">df3</span><span class="o">.</span><span class="n">x</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_x</span> <span class="o">=</span> <span class="n">mean_x</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_x</span> <span class="o">=</span> <span class="n">mean_x</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">df2</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">df4</span><span class="o">.</span><span class="n">y</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_y</span> <span class="o">=</span> <span class="n">mean_y</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean_y</span> <span class="o">=</span> <span class="n">mean_y</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">coords</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">mean_x</span><span class="p">,</span> <span class="n">mean_y</span><span class="p">,</span> <span class="n">mean_z</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">coords</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">scale_factor</span> <span class="o">=</span> <span class="mi">30000</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">coords</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">z</span> <span class="o">*</span> <span class="n">scale_factor</span>
+</span></span><span class="line"><span class="cl"><span class="n">coords</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">scale_factor</span>
+</span></span><span class="line"><span class="cl"><span class="n">coords</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">scale_factor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">coords</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">coords</span><span class="o">.</span><span class="n">z</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="o">-</span><span class="mi">32767</span><span class="p">,</span> <span class="mi">32767</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">32767</span><span class="p">,</span> <span class="mi">32767</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">([</span><span class="o">-</span><span class="mi">32767</span><span class="p">,</span> <span class="mi">32767</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax3</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># rotate the axes and update</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;coords.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;const int16_t coords[400][3] = {</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">coords</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">{{</span><span class="s1"> </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">z</span><span class="p">)</span><span class="si">}</span><span class="s1"> </span><span class="se">}}</span><span class="s1">,</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;};&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Es gibt eine Liste an <code>filenames</code>, die nacheinander abgearbeitet wird.
+Bei einem Klick werden die Mauskoordinaten in Pixeln in der <code>getCoordinate()</code>-Funktion empfangen und abgespeichert, womit man eine Liste an allen Koordinaten erhält.
+Das ist immer noch etwas Arbeit, war aber deutlich einfacher, als irgendein clevers Skript zu schreiben, zumal man diesen Schritt nur ein einziges Mal machen muss (solange einem die Lichterkette nicht verrutscht).</p>
+<h3 id="berechnung-der-koordinaten" class="relative group">Berechnung der Koordinaten <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#berechnung-der-koordinaten" aria-label="Anker">#</a></span></h3>
+<p>Somit hat man nun vier Dateien mit Koordinaten in Pixeln von den vier Seiten des Tannenbaums.
+Daraus lassen sich dann die 3D Koordinaten bestimmen, wobei ich ich die Pixelkoordinaten auf den Bereich eines <code>int16</code>`s von etwa \(-30000\thinspace &ndash;\thinspace +30000\) gemapped habe.
+Damit wird auch die \(0\) ungefähr in die Mitte des Baums gesetzt.</p>
+<p>Den Code hätte man sicherlich hübscher gestalten können, aber es funktioniert.
+Am Ende schreibe ich die Koordinaten gleich in einem Format, welches als Array im Arduino C-Code eingelesen werden kann:
+<script type="application/javascript" src="https://gist.github.com/Abufari/11f715f6ad09de240bc17bd735fe8134.js"></script>
+</p>
+<p>Und so sieht die Rekonstruktion der Koordinaten aus.
+Die Baumform ist auf jeden Fall erkennbar:
+<img src="locations.gif" /></p>
+
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group" href="192.186.0.214/projects/floppotron/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >The Floppotron 3.0</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-06-13 00:00:00 &#43;0000 UTC">13 Juni 2022</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    </footer>
+    
+  </article>
+
+        
+          <div
+            class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-0"
+          >
+            <a
+              href="#the-top"
+              class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5.5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label="Zum Anfang scrollen"
+              title="Zum Anfang scrollen"
+            >
+              &uarr;
+            </a>
+          </div>
+        
+      </main>
+      <div
+  id="search-wrapper"
+  class="fixed inset-0 z-50 flex flex-col p-4 sm:p-6 md:p-[10vh] lg:p-[12vh] w-screen h-screen cursor-default bg-neutral-500/50 backdrop-blur-sm dark:bg-neutral-900/50 invisible"
+  data-url="192.186.0.214"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg border-neutral-200 top-20 bg-neutral dark:bg-neutral-800 dark:border-neutral-700"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-transparent focus:outline-2"
+          placeholder="Suchen"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+        title="Schließen (Esc)"
+      >
+        
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+<footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href="192.186.0.214/tags/"
+              title="Tags"
+              >Tags</a
+            >
+          </li>
+        
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
+            <a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              href="192.186.0.214/impressum/"
+              title="Impressum"
+              >Impressum</a
+            >
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex justify-between">
+    <div>
+      
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          © 2022 Florian Linscheid
+      </p>
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Erstellt mit <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    
+    
+      <div
+        class="text-sm cursor-pointer text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-14 rtl:ml-14"
+      >
+        <button
+          id="appearance-switcher"
+          class="w-12 h-12 "
+          type="button"
+          title="Zum dunklen Erscheinungsbild wechseln"
+        >
+          <span class="inline dark:hidden">
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+</span>
+          <span class="hidden dark:inline">
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+</span>
+        </button>
+      </div>
+    
+  </div>
+  
+  
+</footer>
+</div>
+  </body>
+</html>

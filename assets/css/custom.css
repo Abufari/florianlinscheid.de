@@ -1,0 +1,31 @@
+.gist table tr {
+	border-bottom: none;
+}
+
+html {
+	font-size: 14pt;
+	font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	-ms-transform: translateY(-0%);
+	transform: translateY(-0%);
+}
+
+.center_scaled {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}

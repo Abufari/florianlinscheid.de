@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to Congo! :tada: :smile: on Florian Linscheid</title>
+    <link>192.186.0.214/en/</link>
+    <description>Recent content in Welcome to Congo! :tada: :smile: on Florian Linscheid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2022 Florian Linscheid</copyright>
+    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="192.186.0.214/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>192.186.0.214/en/about/</link>
+      <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>192.186.0.214/en/about/</guid>
+      <description>I am a PhD candidate working at the University of Augsburg, at the Institute for Materials Resource Management.</description>
+    </item>
+    
+  </channel>
+</rss>

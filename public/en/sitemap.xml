@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+      <url>
+            <loc>192.186.0.214/en/projects/</loc>
+            <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="192.186.0.214/projects/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="192.186.0.214/en/projects/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>192.186.0.214/en/</loc>
+            <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="192.186.0.214/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="192.186.0.214/en/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>192.186.0.214/en/blog/</loc>
+            <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="192.186.0.214/blog/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="192.186.0.214/en/blog/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>192.186.0.214/en/about/</loc>
+            <lastmod>2022-05-14T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="192.186.0.214/about/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="192.186.0.214/en/about/"
+              />
+          </url>
+    
+  
+    
+  
+</urlset>
