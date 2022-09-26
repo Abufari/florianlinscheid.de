@@ -4,7 +4,6 @@ date: 2022-05-15
 draft: false
 description: "Blog"
 showDate: false
-showAuthor: false
 showEdit: false
 ---
 

@@ -4,19 +4,13 @@ description: "Das ist die persönliche Website von Florian Linscheid"
 <!-- layout: profile -->
 ---
 
-{{< lead >}}
-I lead this way
-{{< /lead >}}
+<br/>
 
-
-
-Ich bin wissenschaftlicher Mitarbeiter am Institut für Materials Resource
-Management der Universität Augsburg. Ich bin dort am Lehrstuhl Mechanical
-Engineering in der Arbeitsgruppe Zustandsüberwachung. Dort beschäftigen wir uns
-damit, mit verschiedenen Sensoriken Informationen über ich mich mit der
-Kombination verschiedener akustischer Zustandsüberwachungsmethoden in einem
-Sensorsystem und wie gut die einzelnen Methoden mit diesen Sensoren ausgewertet
-werden können.
+<p class="frontpage"> Ich bin wissenschaftlicher Mitarbeiter an der Universität
+Augsburg im Bereich der Zustandsüberwachung, wo wir uns mit der Überwachung und
+Charakterisierung von Industriemaschinen mittels unterschiedlicher akustischen
+Sensoren beschäftigen. Ich bin zudem in der Softwareentwicklung im Bereich Data
+Science tätig und entwickle Sensor-Hardware. </p>
 
 <!-- An der Universität Augsburg habe ich auch schon meinen Bachelor und Master in -->
 <!-- Physik absolviert. Seite 2017 arbeite ich am Lehrstuhl [Mechanical -->

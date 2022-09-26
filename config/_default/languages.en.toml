@@ -14,12 +14,15 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Florian Linscheid"
-  image = "img/IMG_0827.jpeg"
-  headline = "PhD Student, Programmer, Coffee lover!"
-  bio = "This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. :dog:"
+  image = "img/IMG_1226.jpeg"
+  headline = "Researcher, Programmer, Coffee lover!"
+  bio = ""
   links = [
-    { twitter = "https://twitter.com/linschfl" },
+    { envelope-solid = "mailto:mail@florianlinscheid.de" },
     { linkedin = "https://www.linkedin.com/in/linscheid-florian/" },
-    { youtube = "https://youtube.com/" },
     { xing = "https://www.xing.com/profile/FlorianFelix_Linscheid/cv" },
+    { researchgate = "https://www.researchgate.net/profile/Florian-Linscheid-2" },
+    { orcid = "https://orcid.org/0000-0002-9324-1764" },
+    # { twitter = "https://twitter.com/linschfl" },
+    # { youtube = "https://youtube.com/" },
   ]
