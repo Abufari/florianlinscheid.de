@@ -1,6 +1,6 @@
 ---
 title: "Xmas Tree Lights"
-icon: apple
+<!-- icon: apple -->
 description: "Arduino-gesteuerte LEDs"
 date: 2022-06-07
 tags: ["Arduino","LED", "Programmieren"]

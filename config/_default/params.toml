@@ -33,9 +33,9 @@ mainSections = ["projects"]  # used for recents list
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
-  # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+  sharingLinks = ["twitter", "reddit", "linkedin", "email"]
 
 [list]
   showBreadcrumbs = true

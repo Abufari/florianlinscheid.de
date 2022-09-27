@@ -12,7 +12,7 @@ cascade:
 ---
 
 
-![Profilfoto](profil_breit.jpg )
+![Florian Linscheid](profil_breit.jpg )
 
 Mein Name ist Dr.-Ing. Florian Linscheid und ich bin wissenschaftlicher
 Mitarbeiter am Institut für Materials Resource Management an der Universität

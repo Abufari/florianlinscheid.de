@@ -7,14 +7,14 @@ rtl = false
 
 title = "Florian Linscheid"
 # logo = "img/favicons/mstile-150x150.jpg"
-description = "Personal Website by Florian Linscheid"
+description = "Persönliche Website von Florian Linscheid"
 copyright = "&copy; 2022 Florian Linscheid"
 
 dateFormat = "2 January 2006"
 
 [author]
   name = "Florian Linscheid"
-  image = "img/IMG_1226.jpeg"
+  image = "img/avatar-florian-linscheid.jpeg"
   headline = "Researcher, Programmierer, Kaffee-Genießer!"
   bio = ""
   links = [
