@@ -8,8 +8,6 @@ layout: single
 showEdit: false
 ---
 
-# Impressum
-
 ## Angaben gemäß § 5 TMG
 
 Florian Linscheid<br>
