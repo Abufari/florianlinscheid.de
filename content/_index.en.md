@@ -1,6 +1,6 @@
 ---
 title: "Dr.-Ing. Florian Linscheid"
-description: "That is the personal website of Florian Linscheid"
+description: "This is the personal website of Florian Linscheid"
 ---
 
 <br>

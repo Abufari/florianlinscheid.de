@@ -1,6 +1,6 @@
 ---
 title: "Über Mich"
-description: "Meine akademische Laufbahn und mein Lebenslauf"
+description: "Die akademische Laufbahn von Florian Linscheid"
 date: 2022-05-14
 draft: false
 showDate: false

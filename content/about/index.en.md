@@ -2,15 +2,13 @@
 title: "About Me"
 date: 2022-05-14
 draft: false
-description: "About Me"
+description: "Academic career of Florian Linscheid"
 showDate: false
-showAuthor: false
 showReadingTime: false
-showEdit: false
 ---
 
 
-![Profilfoto](profil_breit.jpg )
+![Florian Linscheid](profil_breit.jpg )
 
 My name is Dr.-Ing. Florian Linscheid and I am a research associate at the Institute for Materials Resource Management at the University of Augsburg.
 
