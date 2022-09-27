@@ -4,7 +4,7 @@
 
 theme = "congo"
 defaultContentLanguage = "de"
-baseURL = "https://florianlinscheid.de"
+baseURL = "https://www.florianlinscheid.de"
 
 enableRobotsTXT = true
 paginate = 15

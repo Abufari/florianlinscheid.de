@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["samples"]
+mainSections = ["projects"]  # used for recents list
 # robots = ""
 
 [homepage]
@@ -26,7 +26,7 @@ mainSections = ["samples"]
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
-  editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
+  editURL = "https://github.com/Abufari/florianlinscheid.de/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
