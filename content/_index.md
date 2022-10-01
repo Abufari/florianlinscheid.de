@@ -7,7 +7,7 @@ description: "Das ist die persönliche Website von Florian Linscheid"
 
 <p class="frontpage"> Ich bin wissenschaftlicher Mitarbeiter an der Universität
 Augsburg im Bereich der Zustandsüberwachung, wo wir uns mit der Überwachung und
-Charakterisierung von Industriemaschinen mittels unterschiedlicher akustischen
+Charakterisierung von Industriemaschinen mittels unterschiedlicher akustischer
 Sensoren beschäftigen. Ich bin zudem in der Softwareentwicklung im Bereich Data
 Science tätig und entwickle Sensor-Hardware. </p>
 
